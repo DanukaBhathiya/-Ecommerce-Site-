@@ -25,4 +25,11 @@ export class ProductService {
     });
   }
 
+  public searchProduct(id:string):Observable<any>{
+    return this._http.get('http://localhost:8080/api/v1/product/admin/item?id='+id);
+  }
+
+  public loadAllProduct():Observable<any>{
+    return this._http.get('http://localhost:8080/api/v1/product/admin/item/list');
+  }
 }

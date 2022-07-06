@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { ProductService } from 'src/app/service/product.service';
 
 @Component({
   selector: 'app-get-product',
@@ -7,9 +9,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GetProductComponent implements OnInit {
 
-  constructor() { }
+  productForm = new FormGroup({
+    id:new FormControl(null, [Validators.required])
+  });
+
+  constructor(private _productService: ProductService) { }
+
+  selectedProduct: any = null;
 
   ngOnInit(): void {
+  }
+
+  searchData(){
+    this._productService.searchProduct(this.productForm.get('id')?.value).
+    subscribe(response =>{
+      this.selectedProduct = response.data;
+    }, error => {
+      console.log(error)
+    })
   }
 
 }
