@@ -32,4 +32,8 @@ export class ProductService {
   public loadAllProduct():Observable<any>{
     return this._http.get('http://localhost:8080/api/v1/product/admin/item/list');
   }
+
+  public deleteProduct(id:string):Observable<any>{
+    return this._http.delete('http://localhost:8080/api/v1/product/admin/item?id='+id);
+  }
 }

@@ -1,1 +1,20 @@
-<p>delete-product works!</p>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Unit Price</th>
+            <th>Operate</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let tempProduct of list; index as num">
+            <td>{{tempProduct?.id}}</td>
+            <td>{{tempProduct?.name}}</td>
+            <td>{{tempProduct?.unit_price}}</td>
+            <td>
+                <button (click)="delete(tempProduct?.id)" class="btn btn-sm btn-danger">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
