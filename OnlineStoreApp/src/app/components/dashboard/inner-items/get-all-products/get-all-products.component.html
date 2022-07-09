@@ -1,16 +1,27 @@
+<br><br>
 <table class="table table-hover">
     <thead>
         <tr>
+            <th></th>
             <th>ID</th>
             <th>Name</th>
             <th>Unit Price</th>
+            <th>Operate</th>
         </tr>
     </thead>
     <tbody>
         <tr *ngFor="let tempProduct of list; index as num">
+            <td class="align-middle">
+                <img src="{{tempProduct?.image_url}}" />
+            </td>
             <td>{{tempProduct?.id}}</td>
             <td>{{tempProduct?.name}}</td>
             <td>{{tempProduct?.unit_price}}</td>
+            <td>
+                <!-- <button (click)="delete(tempProduct?.id)" class="btn btn-sm btn-danger">Delete</button> -->
+                <!-- <button (click)="search(tempProduct?.id)" class="btn btn-sm btn-danger">Edit</button> -->
+            </td>
+            
         </tr>
     </tbody>
 </table>

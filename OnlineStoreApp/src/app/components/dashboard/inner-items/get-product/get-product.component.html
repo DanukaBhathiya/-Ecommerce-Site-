@@ -9,7 +9,7 @@
             </mat-form-field>
         </div>
         <div class="col-12">
-            <button mat-raised-button color="primary">Save</button>
+            <button mat-raised-button color="primary">Submit</button>
         </div>
         <br>
     </div>
@@ -19,8 +19,9 @@
 
 <hr>
 <table class="table table-hover">
-    <thead>
+    <thead class="thead-dark">
         <tr>
+            <th></th>
             <th>ID</th>
             <th>Name</th>
             <th>Unit Price</th>
@@ -28,6 +29,9 @@
     </thead>
     <tbody>
         <tr>
+            <td class="align-middle">
+                <img src="{{selectedProduct?.image_url}}" />
+            </td>
             <td>{{selectedProduct?.id}}</td>
             <td>{{selectedProduct?.name}}</td>
             <td>{{selectedProduct?.unit_price}}</td>
