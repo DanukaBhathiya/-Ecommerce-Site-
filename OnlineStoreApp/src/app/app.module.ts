@@ -19,6 +19,7 @@ import { MatInputModule } from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { HomePageComponent } from './components/customer/home-page/home-page.component';
+import { ProductListGridComponent } from './components/customer/product-list-grid/product-list-grid.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { HomePageComponent } from './components/customer/home-page/home-page.com
     DeleteProductComponent,
     GetProductComponent,
     GetAllProductsComponent,
-    HomePageComponent
+    HomePageComponent,
+    ProductListGridComponent
   ],
   imports: [
     BrowserModule,
