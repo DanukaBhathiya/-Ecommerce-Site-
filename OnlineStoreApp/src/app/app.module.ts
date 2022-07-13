@@ -18,8 +18,11 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { HomePageComponent } from './components/customer/home-page/home-page.component';
+import { HomePageComponent } from './components/customer/inner-items/home-page/home-page.component';
 import { ProductListGridComponent } from './components/customer/product-list-grid/product-list-grid.component';
+import { CustomerComponent } from './components/customer/customer.component';
+import { AboutUsPageComponent } from './components/customer/inner-items/about-us-page/about-us-page.component';
+import { ContactUsPageComponent } from './components/customer/inner-items/contact-us-page/contact-us-page.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,10 @@ import { ProductListGridComponent } from './components/customer/product-list-gri
     GetProductComponent,
     GetAllProductsComponent,
     HomePageComponent,
-    ProductListGridComponent
+    ProductListGridComponent,
+    CustomerComponent,
+    AboutUsPageComponent,
+    ContactUsPageComponent
   ],
   imports: [
     BrowserModule,
