@@ -8,23 +8,31 @@
 </div><hr>
 <div class="topnav">
     <a routerLink="home">Site Name</a>
-    <!-- <div class="search-container">
-      <form> -->
+    <!-- <div class="search-container"> -->
+      <form  class="search-container">
         <input type="text" placeholder="Search.." name="search">
         <button type="submit"><i class="material-icons">search</i></button>
         <span class="material-icons">shopping_cart</span>
-      <!-- </form>
-    </div> -->
+      </form>
+    <!-- </div> -->
   </div>
   <mat-tab-group mat-align-tabs="center">
     <mat-tab label="Home">
-        <app-save-product></app-save-product>
+        <app-home-page></app-home-page>
     </mat-tab>
     <mat-tab label="About Us">
-        <app-get-product></app-get-product>
+        <app-about-us-page></app-about-us-page>
     </mat-tab>
     <mat-tab label="Contact Us">
-        <app-update-product></app-update-product>   
+        <app-contact-us-page></app-contact-us-page>  
         </mat-tab>
 </mat-tab-group>
-  <hr>
+
+<!-- END PAGE CONTAINER-->
+<footer>
+  <ul>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Contact Us</a></li>
+    <li><a href="#">Help</a></li>
+  </ul>
+</footer>
