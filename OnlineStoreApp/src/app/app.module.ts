@@ -21,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HomePageComponent } from './components/customer/inner-items/home-page/home-page.component';
 import { ProductListGridComponent } from './components/customer/product-list-grid/product-list-grid.component';
 import { CustomerComponent } from './components/customer/customer.component';
+import { CustomerFooterComponent } from './components/customer/customer-footer.component';
 import { AboutUsPageComponent } from './components/customer/inner-items/about-us-page/about-us-page.component';
 import { ContactUsPageComponent } from './components/customer/inner-items/contact-us-page/contact-us-page.component';
 
@@ -38,6 +39,7 @@ import { ContactUsPageComponent } from './components/customer/inner-items/contac
     HomePageComponent,
     ProductListGridComponent,
     CustomerComponent,
+    CustomerFooterComponent,
     AboutUsPageComponent,
     ContactUsPageComponent
   ],

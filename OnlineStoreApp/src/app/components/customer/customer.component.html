@@ -6,33 +6,40 @@
     <a routerLink="#">Shopping Services</a>
     <a routerLink="#"> LK flag LKR </a>
 </div><hr>
-<div class="topnav">
-    <a routerLink="home">Site Name</a>
-    <!-- <div class="search-container"> -->
-      <form  class="search-container">
-        <input type="text" placeholder="Search.." name="search">
-        <button type="submit"><i class="material-icons">search</i></button>
-        <span class="material-icons">shopping_cart</span>
-      </form>
-    <!-- </div> -->
-  </div>
-  <mat-tab-group mat-align-tabs="center">
-    <mat-tab label="Home">
-        <app-home-page></app-home-page>
-    </mat-tab>
-    <mat-tab label="About Us">
-        <app-about-us-page></app-about-us-page>
-    </mat-tab>
-    <mat-tab label="Contact Us">
-        <app-contact-us-page></app-contact-us-page>  
-        </mat-tab>
-</mat-tab-group>
+<nav class="navbar navbar-light bg-light justify-content-between">
+  <a class="navbar-brand">Site Name</a>
+  <form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    <span class="material-icons">shopping_cart</span>
+  </form>
+</nav>
 
-<!-- END PAGE CONTAINER-->
-<footer>
-  <ul>
-    <li><a href="#">About Us</a></li>
-    <li><a href="#">Contact Us</a></li>
-    <li><a href="#">Help</a></li>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNavDropdown">
+  <ul class="navbar-nav mx-auto">
+    <li class="nav-item active">
+      <a class="nav-link" routerLink="/home">Home <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/about">About Us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/contact">Contact Us</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" routerLink="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown link
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <a class="dropdown-item" routerLink="#">Action</a>
+        <a class="dropdown-item" routerLink="#">Another action</a>
+        <a class="dropdown-item" routerLink="#">Something else here</a>
+      </div>
+    </li>
   </ul>
-</footer>
+</div>
+</nav>
