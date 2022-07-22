@@ -10,4 +10,6 @@ public interface ProductService {
     public ArrayList<ProductDTO> loadAllProducts();
     public String deleteProduct(String Id);
     public String updateProduct(ProductDTO dto);
+
+//    public ProductDTO getProductByCategory(String category);
 }

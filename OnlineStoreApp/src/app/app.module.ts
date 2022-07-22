@@ -16,6 +16,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { HomePageComponent } from './components/customer/inner-items/home-page/home-page.component';
@@ -24,6 +25,7 @@ import { CustomerComponent } from './components/customer/customer.component';
 import { CustomerFooterComponent } from './components/customer/customer-footer.component';
 import { AboutUsPageComponent } from './components/customer/inner-items/about-us-page/about-us-page.component';
 import { ContactUsPageComponent } from './components/customer/inner-items/contact-us-page/contact-us-page.component';
+// import { MatFileUploadModule } from 'mat-file-upload';
 
 @NgModule({
   declarations: [
@@ -51,6 +53,8 @@ import { ContactUsPageComponent } from './components/customer/inner-items/contac
     MatButtonModule,
     MatFormFieldModule,
     MatInputModule,
+    MatSelectModule,
+    // MatFileUploadModule,
     ReactiveFormsModule,
     HttpClientModule
   ],

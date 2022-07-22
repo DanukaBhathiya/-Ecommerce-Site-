@@ -38,6 +38,16 @@ public class ProductServiceIMPL implements ProductService {
         return null;
     }
 
+//    @Override
+//    public ProductDTO getProductByCategory(String category) {
+//        Optional tempData = productRepo.findByCategory(category);
+//        if (tempData.isPresent()) {
+//            Product c = (Product) tempData.get();
+//            return new ProductDTO(c.getId(), c.getCategory(), c.getName(), c.getDescription(), c.getUnit_price(), c.getImage_url(), c.isActive(), c.getUnits_in_stock(), c.getDate_created(), c.getLast_updated());
+//        }
+//        return null;
+//    }
+
     @Override
     public ArrayList<ProductDTO> loadAllProducts() {
         ArrayList<ProductDTO> dtoList = new ArrayList<>();

@@ -25,6 +25,7 @@ public class Product {
     //@ManyToOne
 //    @JoinColumn(name = "category_id", nullable = false)
 //    private ProductCategory category;
+    
     private String category;
     private String name;
     private String description;

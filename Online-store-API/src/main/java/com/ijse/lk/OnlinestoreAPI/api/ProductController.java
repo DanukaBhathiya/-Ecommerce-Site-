@@ -60,6 +60,27 @@ public class ProductController {
         }
     }
 
+//    getProductByCategory
+//    @GetMapping(path = "/admin/item",
+//            produces = {
+//                    MediaType.APPLICATION_JSON_VALUE,
+//                    MediaType.APPLICATION_XML_VALUE,
+//            }
+//    )
+//    public ResponseEntity<StandardResponseEntity> getProductByCategory(@RequestParam(required = true) String category) {
+//        ProductDTO dto = productService.getProductByCategory(category);
+//        if (dto != null) {
+//            return new ResponseEntity<StandardResponseEntity>(
+//                    new StandardResponseEntity(200,"Success!",dto)
+//                    , HttpStatus.OK);
+//        } else {
+//            return new ResponseEntity<StandardResponseEntity>(
+//                    new StandardResponseEntity(404,"Empty Result!",null)
+//                    , HttpStatus.NOT_FOUND);
+//        }
+//    }
+
+
     @GetMapping(path = "/admin/item/list")
     public ResponseEntity<StandardResponseEntity> getAllProduct() {
         return new ResponseEntity<StandardResponseEntity>(
