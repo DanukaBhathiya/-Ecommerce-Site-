@@ -1,0 +1,19 @@
+<!-- header -->
+<app-customer></app-customer>
+
+<div class="detail-section">
+    <div class="container-fluid">
+        <img src="{{ product?.image_url }}" class="detail-img">
+
+        <h1>{{product?.name}}</h1>
+        <div class="price">{{product?.unit_price | currency:'Rs: '}}</div>
+        <a routerLink="#" class="primary-btn">Add to Cart</a>
+
+        <hr>
+        <h4>Description</h4>
+        <p>{{product?.description}}</p>
+    </div>
+</div>
+
+<!-- footer -->
+<app-customer-footer></app-customer-footer>

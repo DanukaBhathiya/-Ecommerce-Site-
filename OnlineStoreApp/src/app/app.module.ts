@@ -25,6 +25,7 @@ import { CustomerComponent } from './components/customer/customer.component';
 import { CustomerFooterComponent } from './components/customer/customer-footer.component';
 import { AboutUsPageComponent } from './components/customer/inner-items/about-us-page/about-us-page.component';
 import { ContactUsPageComponent } from './components/customer/inner-items/contact-us-page/contact-us-page.component';
+import { ProductDetailsComponent } from './components/customer/product-details/product-details.component';
 // import { MatFileUploadModule } from 'mat-file-upload';
 
 @NgModule({
@@ -43,7 +44,8 @@ import { ContactUsPageComponent } from './components/customer/inner-items/contac
     CustomerComponent,
     CustomerFooterComponent,
     AboutUsPageComponent,
-    ContactUsPageComponent
+    ContactUsPageComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,
