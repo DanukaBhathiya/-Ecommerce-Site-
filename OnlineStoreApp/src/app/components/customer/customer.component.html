@@ -9,8 +9,8 @@
 <nav class="navbar navbar-light bg-light justify-content-between">
   <a class="navbar-brand">Site Name</a>
   <form class="form-inline my-2 my-lg-0">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    <input class="form-control mr-sm-2" #myInput type="text" placeholder="Search" aria-label="Search" (keyup.enter)="doSearch(myInput.value)">
+    <button class="btn btn-outline-success my-2 my-sm-0" (click)="doSearch(myInput.value)">Search</button>
     <span class="material-icons">shopping_cart</span>
   </form>
 </nav>
@@ -35,8 +35,8 @@
         Category
       </a>
       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-        <a class="dropdown-item" routerLink="category/t-shirt">T-Shirt</a>
-        <a class="dropdown-item" routerLink="category/shoes">Shoes</a>
+        <a class="dropdown-item" routerLink="category/t-shirt" routerLinkActive="active-link">T-Shirt</a>
+        <a class="dropdown-item" routerLink="category/shoes" routerLinkActive="active-link">Shoes</a>
       </div>
     </li>
   </ul>

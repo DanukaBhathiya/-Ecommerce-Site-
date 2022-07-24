@@ -5,6 +5,7 @@ import { AboutUsPageComponent } from './components/customer/inner-items/about-us
 import { ContactUsPageComponent } from './components/customer/inner-items/contact-us-page/contact-us-page.component';
 import { HomePageComponent } from './components/customer/inner-items/home-page/home-page.component';
 import { ProductDetailsComponent } from './components/customer/product-details/product-details.component';
+import { ProductListGridComponent } from './components/customer/product-list-grid/product-list-grid.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { LoginPageComponent } from './components/login-page/login-page.component';
 import { SignupPageComponent } from './components/signup-page/signup-page.component';
@@ -19,8 +20,10 @@ const routes: Routes = [
   {path: 'contact', component: ContactUsPageComponent},
   {path: 'dashboard', component: DashboardComponent},
   {path: 'product/:id', component: ProductDetailsComponent},
-  // {path: 'category/t-shirt', component: ProductDetailsComponent},
-  // {path: 'category/shoes', component: ProductDetailsComponent}
+  {path: 'search/:keyword', component: HomePageComponent},
+  {path: 'category/:category', component: ProductDetailsComponent},
+  {path: 'category/:t-shirt', component: ProductDetailsComponent},
+  {path: 'category/:shoes', component: ProductDetailsComponent}
 ];
 
 @NgModule({

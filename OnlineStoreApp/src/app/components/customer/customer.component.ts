@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-customer',
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomerComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
+
+  doSearch(value: string){
+    console.log(`value=${value}`);
+    this.router.navigateByUrl(`/search/${value}`);
+  }
 
   ngOnInit(): void {
   }

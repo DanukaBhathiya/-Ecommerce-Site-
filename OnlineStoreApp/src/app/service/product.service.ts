@@ -44,6 +44,10 @@ export class ProductService {
     return this._http.get('http://localhost:8080/api/v1/product/admin/item?id='+id);
   }
 
+  public searchProduct2(theKeyword:string):Observable<any>{
+    return this._http.get('http://localhost:8080/api/v1/product/admin/item?name='+theKeyword);
+  }
+
   public loadAllProduct():Observable<any>{
     return this._http.get('http://localhost:8080/api/v1/product/admin/item/list');
   }
